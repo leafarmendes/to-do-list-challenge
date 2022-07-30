@@ -1,0 +1,115 @@
+.content {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  margin-top: calc(-3.375rem / 2);
+  flex-direction: column;
+}
+
+.content form { 
+  display: flex;
+}
+
+.addTodoInput {
+  width: 40rem;
+  height: 3.375rem;
+
+  background: var(--gray-500);
+  border: var(--gray-700);
+  border-radius: 8px;
+
+  padding: 1rem;
+
+  color: var(--white);
+}
+
+.buttonTodoSubmit {
+  padding: 1rem;
+  margin-left: 8px;
+  height: 3.375rem;
+
+  display: flex;
+  gap: 8px;
+
+  border-radius: 8px;
+
+  background: var(--blue-100);
+  color: var(--white);
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.buttonTodoSubmit:disabled {
+  opacity: 0.7;
+  filter: grayscale(100%);
+  cursor: not-allowed;
+}
+
+.buttonTodoSubmit:not(:disabled):hover {
+  background: var(--blue-200);
+}
+
+.list {
+  width: 46rem;
+  margin-bottom: 2rem;
+}
+
+.headerList {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.created {
+  color: var(--blue-100);
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.created span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 100px;
+  color: var(--white);
+}
+
+.done {
+  color: var(--purple-100);
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.done span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  border-radius: 100px;
+  color: var(--white);
+}
+
+.containerList {
+  display: flex;
+  height: 12.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px solid #333333;
+
+}
+
+.containerList img {
+  width: 3.5rem;
+  height: 3.5rem;
+
+  margin-bottom: 10px;
+}
+
+.containerList strong {
+  margin-top: 10px;
+}
