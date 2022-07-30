@@ -3,6 +3,8 @@ import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react';
 import { Assign } from './Assign';
 import styles from './Content.module.css';
 
+import clipBoardImage from '/src/assets/clipboard.svg'
+
 export interface Tasks {
   id: string;
   title: string;
@@ -91,7 +93,7 @@ export function Content() {
 
           {toDoList.length === 0 ? 
             <div className={styles.containerList}>
-              <img src="../src/assets/clipboard.svg" alt="" />
+              <img src={clipBoardImage} alt="" />
               <p><strong>Você ainda não tem tarefas cadastradas.</strong></p>
               <p>Crie tarefas e organize seus itens a fazer.</p>
             </div> 
